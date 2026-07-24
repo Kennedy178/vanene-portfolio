@@ -1,6 +1,6 @@
 # Vanene Portfolio - Architecture
 
-**Status:** Source of truth. Both the frontend build (this chat) and the backend build (separate chat) must follow this document. If something isn't in here, stop and ask rather than guessing - do not invent conventions that could conflict with the other side of the build.
+**Status:** Source of truth. Both the frontend build. and the backend build must follow this document. If something isn't in here, stop and ask rather than guessing - do not invent conventions that could conflict with the other side of the build.
 
 **Owner:** Kennedy Vanene
 **Last updated:** 2026-07-19
