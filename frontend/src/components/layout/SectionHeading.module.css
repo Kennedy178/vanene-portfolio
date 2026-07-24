@@ -1,0 +1,28 @@
+.head {
+  margin-bottom: 52px;
+  max-width: 60ch;
+}
+
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  color: var(--rust);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: clamp(30px, 3.6vw, 42px);
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  color: var(--ink);
+}
+
+.desc {
+  margin-top: 14px;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+}

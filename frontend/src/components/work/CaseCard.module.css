@@ -1,0 +1,134 @@
+.case {
+  background: var(--bg);
+  padding: 38px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm), var(--shadow-md);
+  transition: box-shadow .35s var(--ease), transform .35s var(--ease), border-color .35s ease;
+}
+
+@media (max-width: 560px) {
+  .case {
+    padding: 24px 14px;
+  }
+}
+
+.case:hover {
+  box-shadow: var(--shadow-sm), var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: var(--line-hover);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  border: 1px solid var(--ink);
+  padding: 8px 16px;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: background .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease);
+}
+
+.link:hover {
+  background: var(--rust);
+  border-color: var(--rust);
+  color: var(--bg);
+}
+
+.linkGhost {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  padding: 8px 16px;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: background .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease);
+}
+
+.linkGhost:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+  background: var(--bg-2);
+}
+
+.linkPrivate {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+.desc {
+  color: var(--ink-soft);
+  font-size: 15px;
+  max-width: 66ch;
+  margin-bottom: 24px;
+}
+
+.stats {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.statVal {
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.statLbl {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.stack {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.chip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  padding: 5px 11px;
+  border-radius: 100px;
+}

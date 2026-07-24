@@ -1,0 +1,11 @@
+.groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 820px) {
+  .groups {
+    grid-template-columns: 1fr;
+  }
+}

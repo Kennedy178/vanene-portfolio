@@ -1,0 +1,99 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 40px;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    padding: 16px 18px;
+  }
+}
+
+.brand {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: -0.01em;
+}
+
+.brand em {
+  font-style: italic;
+  color: var(--rust);
+}
+
+.navlinks {
+  display: flex;
+  gap: 34px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+
+.navlinks a {
+  position: relative;
+  padding-bottom: 2px;
+  transition: color .2s ease;
+}
+
+.navlinks a:hover {
+  color: var(--ink);
+}
+
+.navlinks a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background: var(--rust);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s var(--ease);
+}
+
+.navlinks a:hover::after,
+.navlinks a.active::after {
+  transform: scaleX(1);
+}
+
+.navlinks a.active {
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .navlinks {
+    display: none;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navCta {
+  font-size: 13px;
+  font-family: 'IBM Plex Mono', monospace;
+  border: 1px solid var(--ink);
+  padding: 9px 18px;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: background .2s ease, color .2s ease;
+}
+
+.navCta:hover {
+  background: var(--ink);
+  color: var(--bg);
+}

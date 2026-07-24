@@ -1,0 +1,28 @@
+.empty {
+  text-align: center;
+  padding: 56px 32px;
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+  background: var(--bg-2);
+}
+
+.mark {
+  color: var(--rust);
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 44ch;
+  margin: 0 auto;
+}

@@ -1,0 +1,63 @@
+.group {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px 30px;
+  box-shadow: var(--shadow-sm), 0 10px 26px rgba(20, 19, 15, 0.07);
+}
+
+.group h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: var(--ink);
+}
+
+.sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.row {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.row:first-of-type {
+  border-top: none;
+}
+
+.rowTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-size: 14px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.proof {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  color: var(--rust);
+}
+
+.track {
+  height: 4px;
+  background: var(--bg-2);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--pine);
+  border-radius: 100px;
+}

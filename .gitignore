@@ -1,0 +1,29 @@
+# --- Backend (Python) ---
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+backend/.env
+backend/*.egg-info/
+backend/.pytest_cache/
+
+# --- Frontend (Node) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.production
+
+
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Misc ---
+*.log
+.env
+!backend/.env.example

@@ -1,0 +1,28 @@
+.card {
+  background: var(--bg);
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm), 0 10px 26px rgba(20, 19, 15, 0.07);
+}
+
+.stars {
+  color: var(--rust);
+  font-size: 14px;
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+}
+
+.quote {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 15.5px;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+}

@@ -1,0 +1,90 @@
+.card {
+  margin-top: 56px;
+  max-width: 520px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 28px 30px;
+  box-shadow: var(--shadow-sm), var(--shadow-md);
+  transition: transform .3s var(--ease), box-shadow .3s ease, border-color .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm), var(--shadow-lg);
+  border-color: var(--line-hover);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-bottom: 18px;
+}
+
+.badge {
+  background: color-mix(in srgb, var(--rust) 10%, transparent);
+  color: var(--rust);
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-weight: 500;
+  letter-spacing: .04em;
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.old {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--rust-dim);
+  text-decoration-thickness: 2px;
+}
+
+.arrow {
+  color: var(--muted);
+}
+
+.new {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--pine);
+  letter-spacing: -0.01em;
+}
+
+.cap {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.cap a {
+  color: var(--rust);
+  font-weight: 500;
+}
+
+.cap a:hover {
+  text-decoration: underline;
+}

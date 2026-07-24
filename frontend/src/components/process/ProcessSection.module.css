@@ -1,0 +1,63 @@
+.process {
+  background: var(--bg-2);
+}
+
+.path {
+  margin-top: 56px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 36px;
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+}
+
+.step:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 720px) {
+  .step {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+.left {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--rust);
+}
+
+.question {
+  font-family: 'Fraunces', serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.right p {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  max-width: 56ch;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  color: var(--pine);
+  border: 1px solid var(--pine-dim);
+  background: color-mix(in srgb, var(--pine) 6%, transparent);
+  padding: 5px 12px;
+  border-radius: 6px;
+}

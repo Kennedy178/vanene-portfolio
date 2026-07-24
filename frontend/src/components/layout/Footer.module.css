@@ -1,0 +1,64 @@
+.footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.left {
+  white-space: nowrap;
+}
+
+/*
+  Fully functional link - real cursor, real hover, real focus outline for
+  accessibility. The "hidden" part is entirely about visual weight: no
+  underline, color barely shifts on hover (a couple of shades, not the
+  full contrast jump every other link in this footer gets), so it reads
+  as static punctuation to anyone not already looking for it.
+*/
+.adminLink {
+  color: inherit;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.adminLink:hover,
+.adminLink:focus-visible {
+  color: var(--ink-soft);
+}
+
+.socials {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  transition: color .2s ease;
+}
+
+.socials a:hover {
+  color: var(--ink);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pine);
+}
