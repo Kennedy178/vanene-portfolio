@@ -2,6 +2,7 @@
 import { Header } from '../components/layout/Header';
 import { Footer } from '../components/layout/Footer';
 import { BackToTop } from '../components/layout/BackToTop';
+import { WhatsAppButton } from '../components/layout/WhatsAppButton';
 import { Hero } from '../components/hero/Hero';
 import { CaseFilesSection } from '../components/work/CaseFilesSection';
 import { EvidenceSection } from '../components/evidence/EvidenceSection';
@@ -33,6 +34,7 @@ export function HomePage({ theme, onToggleTheme }: HomePageProps) {
       </main>
       <Footer />
       <BackToTop />
+      <WhatsAppButton />
     </>
   );
 }

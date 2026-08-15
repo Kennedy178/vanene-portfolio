@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { href: '#process', label: 'Process' },
   { href: '#stack', label: 'Stack' },
   { href: '#ratings', label: 'Ratings' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 interface HeaderProps {
