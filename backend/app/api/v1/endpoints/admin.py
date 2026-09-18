@@ -30,7 +30,7 @@ async def admin_login(payload: dict, response: Response):
         value=token,
         httponly=True,
         secure=settings.is_production,
-        samesite="lax",
+        samesite="none" if settings.is_production else "lax",
         max_age=60 * 60 * 8,
     )
     return {"status": "ok"}
