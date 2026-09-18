@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 const SOCIALS = [
   // TODO: replace 12345678 with the real WhatsApp number before launch
   { label: 'WhatsApp', href: 'https://wa.me/12345678' },
-  { label: 'Email', href: 'mailto:kennedydsml@gmail.com' },
+  { label: 'Email', href: 'mailto:kennedy@iamvanene.com' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kennedy-munene-dsml/' },
   { label: 'GitHub', href: 'https://github.com/Kennedy178' },
   { label: 'Medium', href: 'https://medium.com/@kennedydsml' },

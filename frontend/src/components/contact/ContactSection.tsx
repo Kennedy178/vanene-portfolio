@@ -4,7 +4,7 @@ import styles from './ContactSection.module.css';
 const CHANNELS = [
     // TODO: replace 12345678 with the real WhatsApp number before launch
   { label: 'WhatsApp', value: '+254 ...', href: 'https://wa.me/12345678' },
-  { label: 'Email', value: 'kennedydsml@gmail.com', href: 'mailto:kennedydsml@gmail.com' },
+  { label: 'Email', value: 'kennedy@iamvanene.com', href: 'mailto:kennedy@iamvanene.com' },
   { label: 'LinkedIn', value: 'kennedy-munene-dsml', href: 'https://www.linkedin.com/in/kennedy-munene-dsml/' },
   { label: 'GitHub', value: 'Kennedy178', href: 'https://github.com/Kennedy178' },
   { label: 'Medium', value: '@kennedydsml', href: 'https://medium.com/@kennedydsml' },
