@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import get_settings
-from app.api.v1.endpoints import ratings, admin, contact
+from app.api.v1.endpoints import ratings, admin, contact, analytics
 
 settings = get_settings()
 
@@ -20,6 +20,7 @@ app.add_middleware(
 app.include_router(ratings.router, prefix="/api/v1")
 app.include_router(admin.router, prefix="/api/v1")
 app.include_router(contact.router, prefix="/api/v1")
+app.include_router(analytics.router, prefix="/api/v1")
 
 
 @app.get("/health")

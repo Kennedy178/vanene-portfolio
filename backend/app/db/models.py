@@ -46,3 +46,15 @@ class ContactMessage(Base):
         DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
     )
     email_delivered: Mapped[bool] = mapped_column(default=False)
+
+class AnalyticsEvent(Base):
+    __tablename__ = "analytics_events"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    session_id: Mapped[str] = mapped_column(String, nullable=False)
+    path: Mapped[str] = mapped_column(String, nullable=False)
+    country: Mapped[str | None] = mapped_column(String, nullable=True)
+    device: Mapped[str] = mapped_column(String, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
+    )    

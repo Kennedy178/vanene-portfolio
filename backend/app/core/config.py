@@ -6,6 +6,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     # Database
     database_url: str
+    direct_database_url: str = ""
 
     # Admin auth
     admin_secret: str
