@@ -25,4 +25,6 @@ async def send_contact_email(name: str, email: str, message: str) -> bool:
                 "text": message,
             },
         )
+        if response.status_code != 200:
+            print(f"[resend error] status={response.status_code} body={response.text}")
         return response.status_code == 200
