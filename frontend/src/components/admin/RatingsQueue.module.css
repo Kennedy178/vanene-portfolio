@@ -78,8 +78,14 @@
 }
 
 .reject {
-  border: 1px solid var(--line);
-  color: var(--ink-soft);
+  border: 1px solid var(--rust);
+  color: var(--rust);
+  background: transparent;
+}
+
+.reject:hover {
+  background: var(--rust);
+  color: var(--bg);
 }
 
 .approve:hover,
