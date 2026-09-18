@@ -51,7 +51,7 @@ export const caseFiles: CaseFile[] = [
     slug: 'dr-jacob-advisory',
     title: 'Dr. Jacob Advisory',
     tag: 'Multi-region professional services platform',
-    liveUrl: 'https://drjacobadvisory.vercel.app',
+    liveUrl: 'https://www.drjacobadvisory.com/',
     description:
       'A full-stack platform for a client with an international clientele - real-time testimonials, a blog CMS, and visitor analytics, run from an admin dashboard that needs zero code access to operate.',
     decision: {
